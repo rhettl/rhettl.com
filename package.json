@@ -1,13 +1,13 @@
 {
   "name": "rhettl.com",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Rhett Lowe's public face",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Rhett Lowe <rng2ml@gmail.com>",
+  "license": "copyright",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-awspublish": "^3.0.1"
