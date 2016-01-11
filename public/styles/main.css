@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Candal");
+@import url("https://fonts.googleapis.com/css?family=Catamaran");
+html {
+  color: #3a2f26;
+  font-size: 20px; }
+
+body {
+  background-color: #fff5ed;
+  padding-top: 20px;
+  font-size: 1rem;
+  font-family: 'Catamaran', Arial, serif; }
+
+hr {
+  border-top-color: #3a2f26; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candal', Arial, serif;
+  text-align: center;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      text-align: left; } }
+
+h1 {
+  font-size: 2.15rem; }
+
+h2 {
+  font-size: 1.9rem; }
+
+p {
+  font-size: 1rem; }
+
+a {
+  color: #3a2f26; }
+  a:hover {
+    color: #000;
+    text-decoration: none; }
+
+.col-main {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .col-main {
+      width: 64%; } }
+
+.col-right {
+  display: none;
+  vertical-align: top;
+  width: 35%; }
+  @media (min-width: 768px) {
+    .col-right {
+      display: inline-block; } }
+
+.header {
+  padding: 50px 0; }
+  @media (min-width: 768px) {
+    .header {
+      padding-right: 10px;
+      padding-left: 10px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header {
+      padding: 0 10px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+      padding: 35px 10px; } }
+  .header h1 {
+    color: #b72f26;
+    font-weight: bolder;
+    font-size: 2.26rem; }
+  .header h2 {
+    font-family: 'Catamaran', Arial, serif;
+    font-size: 2.15rem; }
+
+@media (min-width: 768px) {
+  .xs-profile-image {
+    display: none; } }
+
+nav {
+  display: block;
+  margin: 30px 10px 20px 10px; }
+  @media (min-width: 768px) {
+    nav {
+      border-bottom: 1px solid #3a2f26;
+      margin-right: 30px; } }
+  nav ul {
+    list-style: none;
+    padding: 4px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      nav ul {
+        text-align: right; } }
+    @media (min-width: 768px) {
+      nav ul li {
+        display: inline-block;
+        border: 0; } }
+    nav ul li a {
+      color: #fff5ed;
+      background-color: #3a2f26;
+      border-radius: 4px;
+      padding: 7px 14px;
+      border: 1px solid #3a2f26;
+      margin: 7px 0;
+      display: block; }
+      @media (min-width: 768px) {
+        nav ul li a {
+          display: inline-block;
+          background-color: transparent;
+          padding: 4px 5px;
+          border: 1px solid transparent;
+          color: #3a2f26; } }
+      @media (min-width: 992px) {
+        nav ul li a {
+          padding: 4px 14px; } }
+      nav ul li a:hover {
+        color: #fff5ed;
+        background-color: #000;
+        text-decoration: none; }
+        @media (min-width: 768px) {
+          nav ul li a:hover {
+            color: #000;
+            background-color: transparent;
+            border: 1px solid #3a2f26; } }
+
+.content .content-section {
+  margin: 20px 0 10px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #3a2f26; }
+  @media (min-width: 768px) {
+    .content .content-section:nth-child(even) h2, .content .content-section:nth-child(even) p {
+      text-align: right; } }
+  .content .content-section:last-child {
+    border-bottom: none; }
+  .content .content-section h2 {
+    margin: 35px 0; }
+  .content .content-section p {
+    text-align: justify; }
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0; }
+  .contact-list li {
+    display: inline-block; }
+  .contact-list.contact-list-right {
+    display: inline-block;
+    text-align: right;
+    margin-top: 40px; }
+    .contact-list.contact-list-right li {
+      position: relative;
+      padding-right: 80px;
+      line-height: 3rem;
+      font-size: 1.5rem;
+      display: block; }
+      .contact-list.contact-list-right li i, .contact-list.contact-list-right li span.fa-stack {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center; }
+        .contact-list.contact-list-right li i .fa-stack-2x, .contact-list.contact-list-right li span.fa-stack .fa-stack-2x {
+          font-size: 3rem; }
+        .contact-list.contact-list-right li i .fa-stack-1x, .contact-list.contact-list-right li span.fa-stack .fa-stack-1x {
+          font-size: 1.5rem;
+          line-height: 3rem; }
+
+footer {
+  margin-bottom: 20px; }
+  footer .sm-text-left, footer .sm-text-right {
+    text-align: center; }
+  @media (min-width: 768px) {
+    footer .sm-text-left {
+      text-align: left; }
+    footer .sm-text-right {
+      text-align: right; } }
+
+/*# sourceMappingURL=main.css.map */

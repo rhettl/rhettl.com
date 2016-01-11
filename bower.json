@@ -1,0 +1,26 @@
+{
+  "name": "rhettl.com",
+  "authors": [
+    "Rhett Lowe <rng2ml@gmail.com>"
+  ],
+  "description": "Public face of Rhett Lowe",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Rhett",
+    "Lowe",
+    "Blog",
+    "CV",
+    "resume"
+  ],
+  "license": "MIT",
+  "homepage": "rhettl.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
