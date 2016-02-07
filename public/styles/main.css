@@ -8,7 +8,7 @@ body {
   background-color: #fff5ed;
   padding-top: 20px;
   font-size: 1rem;
-  font-family: 'Catamaran', Arial, serif; }
+  font-family: "Catamaran", Arial, serif; }
 
 hr {
   border-top-color: #3a2f26; }
@@ -29,6 +29,12 @@ h2 {
 
 p {
   font-size: 1rem; }
+  p a {
+    text-decoration: underline; }
+    p a:hover {
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline; }
 
 a {
   color: #3a2f26; }
@@ -126,9 +132,6 @@ nav {
   margin: 20px 0 10px;
   padding-bottom: 35px;
   border-bottom: 1px solid #3a2f26; }
-  @media (min-width: 768px) {
-    .content .content-section:nth-child(even) h2, .content .content-section:nth-child(even) p {
-      text-align: right; } }
   .content .content-section:last-child {
     border-bottom: none; }
   .content .content-section h2 {
@@ -136,12 +139,22 @@ nav {
   .content .content-section p {
     text-align: justify; }
 
+form button.btn.btn-primary {
+  background: #3a2f26 none;
+  color: #fff5ed;
+  font-family: "Catamaran", Arial, serif;
+  border: 0; }
+  form button.btn.btn-primary:hover {
+    background-color: #000; }
+
 .contact-list {
   list-style: none;
   padding-left: 0;
   padding-right: 0; }
   .contact-list li {
     display: inline-block; }
+  .contact-list .devicons {
+    font-size: 1.3rem; }
   .contact-list.contact-list-right {
     display: inline-block;
     text-align: right;
@@ -166,6 +179,10 @@ nav {
         .contact-list.contact-list-right li i .fa-stack-1x, .contact-list.contact-list-right li span.fa-stack .fa-stack-1x {
           font-size: 1.5rem;
           line-height: 3rem; }
+          .contact-list.contact-list-right li i .fa-stack-1x.devicons, .contact-list.contact-list-right li span.fa-stack .fa-stack-1x.devicons {
+            font-size: 2rem; }
+  .contact-list .fa-inverse {
+    color: #fff5ed; }
 
 footer {
   margin-bottom: 20px; }

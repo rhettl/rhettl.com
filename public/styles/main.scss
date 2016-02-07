@@ -11,6 +11,7 @@ $col-right-width : 35%;
 $col-main-width : 100% - $col-right-width - 1%;
 
 $base-font-size : 20px;
+$base-font-family : 'Catamaran', Arial, serif;
 
 * {
   //border: 1px solid $txt_color_main;
@@ -25,7 +26,7 @@ body {
   background-color : $bg_color_main;
   padding-top      : 20px;
   font-size        : 1rem;
-  font-family      : 'Catamaran', Arial, serif;
+  font-family      : $base-font-family;
 }
 
 hr {
@@ -52,6 +53,17 @@ h2 {
 
 p {
   font-size : 1rem;
+
+  a {
+    //font-weight: bold;
+    text-decoration : underline;
+
+    &:hover {
+      color           : $txt_color_hover;
+      font-weight     : bold;
+      text-decoration : underline;
+    }
+  }
 }
 
 a {
@@ -99,7 +111,7 @@ a {
   }
 
   h1 {
-    color: adjust_color($txt_color_main, $red: +125);
+    color       : adjust_color($txt_color_main, $red : +125);
     font-weight : bolder;
     font-size   : 2.26rem;
   }
@@ -183,13 +195,13 @@ nav {
     padding-bottom : 35px;
     border-bottom  : 1px solid $txt_color_main;
 
-    @media (min-width : $screen-sm-min) {
-      &:nth-child(even) {
-        h2, p {
-          text-align : right;
-        }
-      }
-    }
+    //@media (min-width : $screen-sm-min) {
+    //  &:nth-child(even) {
+    //    h2, p {
+    //      text-align : right;
+    //    }
+    //  }
+    //}
 
     &:last-child {
       border-bottom : none;
@@ -205,6 +217,19 @@ nav {
 
 }
 
+form {
+  button.btn.btn-primary {
+    background  : $txt_color_main none;
+    color: $bg_color_main;
+    font-family : $base-font-family;
+    border      : 0;
+
+    &:hover {
+      background-color: $txt_color_hover;
+    }
+  }
+}
+
 .contact-list {
   $icon-size : 1rem;
   list-style    : none;
@@ -213,6 +238,10 @@ nav {
 
   li {
     display : inline-block;
+  }
+
+  .devicons {
+    font-size : $icon-size + 0.3rem;
   }
 
   &.contact-list-right {
@@ -244,15 +273,23 @@ nav {
         .fa-stack-1x {
           font-size   : $icon-size / 2;
           line-height : $icon-size;
+
+          &.devicons {
+            font-size : $icon-size - 1rem;
+          }
         }
       }
     }
 
   }
+
+  .fa-inverse {
+    color : $bg_color_main;
+  }
 }
 
 footer {
-  margin-bottom: 20px;
+  margin-bottom : 20px;
 
   .sm-text-left, .sm-text-right {
     text-align : center;
