@@ -138,6 +138,8 @@ nav {
     margin: 35px 0; }
   .content .content-section p {
     text-align: justify; }
+  .content .content-section span.bold {
+    font-weight: bold; }
 
 form button.btn.btn-primary {
   background: #3a2f26 none;
